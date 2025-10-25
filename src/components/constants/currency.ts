@@ -1,0 +1,35 @@
+export const ChooseCurrency = [
+    {
+        name:"INR",
+        value:"INR"
+    },
+    {
+    name:"EUR",
+    value:"EUR"
+},
+{
+    name:"USD",
+    value:"USD"
+},
+{
+    name:"GBP",
+    value:"GBP"
+},
+{
+    name:"CAD",
+    value:"CAD"
+},
+{
+    name:"AED",
+    value:"AED"
+},
+{
+    name:"SGD",
+    value:"SGD"
+},
+{
+    name:"AUD",
+    value:"AUD"
+},
+
+]

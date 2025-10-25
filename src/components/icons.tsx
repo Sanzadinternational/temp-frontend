@@ -1,0 +1,77 @@
+import {
+    AlertTriangle,
+    ArrowRight,
+    CarFront,
+    Check,
+    ChevronLeft,
+    ChevronRight,
+    CircuitBoardIcon,
+    CalendarCheck,
+    Command,
+    CreditCard,
+    File,
+    FileText,
+    House,
+    NotebookPen,
+   
+    Image,
+   
+    LayoutDashboardIcon,
+    Loader2,
+    LogIn,
+    LucideIcon,
+   
+    LucideShoppingBag,
+    Moon,
+    MoreVertical,
+  
+    Plus,
+    Proportions,
+    Settings,
+    SunMedium,
+    Trash,
+   
+    User,
+    UserCircle2Icon,
+    UserPen,
+    UserX2Icon,
+    Package,
+    X
+  } from 'lucide-react';
+  
+  export type Icon = LucideIcon;
+  
+  export const Icons = {
+    dashboard: LayoutDashboardIcon,
+    reports:Proportions,
+    booking:CalendarCheck,
+    logo: Command,
+    login: LogIn,
+    close: X,
+    car:CarFront,
+    house:House,
+    entry:NotebookPen,
+    product: LucideShoppingBag,
+    spinner: Loader2,
+    kanban: CircuitBoardIcon,
+    chevronLeft: ChevronLeft,
+    chevronRight: ChevronRight,
+    trash: Trash,
+    employee: UserX2Icon,
+    post: FileText,
+    page: File,
+    userPen: UserPen,
+    user2: UserCircle2Icon,
+    media: Image,
+    settings: Settings,
+    billing: CreditCard,
+    ellipsis: MoreVertical,
+    add: Plus,
+    warning: AlertTriangle,
+    user: User,
+    arrowRight: ArrowRight,
+    sun: SunMedium,
+    moon: Moon,
+    package:Package,
+    check: Check
+  };
