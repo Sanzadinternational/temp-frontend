@@ -125,7 +125,8 @@ const SupplierBookingsTable = () => {
   const statusOptions = [
     { value: "all", label: "All Bookings" },
     { value: "pending", label: "Pending" },
-    { value: "approved", label: "Upcoming" },
+    // { value: "approved", label: "Upcoming" },
+    { value: "approved", label: "Confirmed" },
     { value: "completed", label: "Completed" },
     { value: "rejected", label: "Rejected" },
   ];
@@ -575,8 +576,9 @@ const SupplierBookingsTable = () => {
     if (statusFilter !== "all") {
       if (statusFilter === "approved") {
         statusMatch = bookingStatus === "approved";
-      } else if (statusFilter === "upcoming") {
-        statusMatch = bookingStatus === "approved";
+      // } else if (statusFilter === "upcoming") {
+      //   statusMatch = bookingStatus === "approved";
+      
       } else {
         statusMatch = bookingStatus === statusFilter;
       }
@@ -650,9 +652,12 @@ const SupplierBookingsTable = () => {
         case "approved":
           return (
             <Badge className="bg-blue-500 hover:bg-blue-600">
-              <Clock className="h-3 w-3 mr-1" />
-              Upcoming
+              {/* <Clock className="h-3 w-3 mr-1" />
+              Upcoming */}
+              <Check className="h-3 w-3 mr-1" /> 
+      Confirmed 
             </Badge>
+
           );
         case "pending":
           return (
