@@ -110,7 +110,8 @@ const [statusFilter, setStatusFilter] = useState<string>("all");
 const statusOptions = [
   { value: "all", label: "All Bookings" },
   { value: "pending", label: "Pending" },
-  { value: "approved", label: "Upcoming" },
+  // { value: "approved", label: "Upcoming" },
+  { value: "approved", label: "Confirmed" },
   { value: "completed", label: "Completed" },
   { value: "rejected", label: "Rejected" },
 ];
@@ -485,8 +486,10 @@ if (type === "booking") {
       case "approved":
         return (
           <Badge className="bg-blue-500 hover:bg-blue-600">
-            <Clock className="h-3 w-3 mr-1" />
-            Upcoming
+            {/* <Clock className="h-3 w-3 mr-1" />
+            Upcoming */}
+            <Check className="h-3 w-3 mr-1" /> 
+                  Confirmed 
           </Badge>
         );
       case "pending":
