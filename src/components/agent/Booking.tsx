@@ -96,7 +96,7 @@ const Booking = ({ bookingInfo, setBookingInfo, nextStep }) => {
       venueAddress:"",
       destinationName: "",
       destinationAddress: "",
-      termsAccepted: true,
+      termsAccepted: false,
     },
   });
 
